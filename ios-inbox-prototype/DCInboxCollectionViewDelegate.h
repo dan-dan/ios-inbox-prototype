@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface DCInboxCollectionViewDelegate : NSObject <UICollectionViewDelegate>
+@interface DCInboxCollectionViewDelegate : NSObject <UICollectionViewDelegateFlowLayout>
 
 
 @end

@@ -23,18 +23,16 @@
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kNoteCellIdentifier    forIndexPath:indexPath];
-    [cell setBackgroundColor:[UIColor redColor]];
-    [cell setAlpha:0.5];
-    cell.transform = CGAffineTransformMakeScale(0.5, 0.5);
-    
-    for (UICollectionViewCell *cell in collectionView.visibleCells) {
-        [UIView animateWithDuration:0.1 animations:^{
-            [cell setAlpha:1.0];
-            cell.transform = CGAffineTransformIdentity;
-        }];
-    }
+    [UIView animateWithDuration:0.5 animations:^{
+   //     [cell setAlpha:1.0];
+        cell.transform = CGAffineTransformIdentity;
+    }];
+
     
     return cell;
     
 }
+
+
+
 @end

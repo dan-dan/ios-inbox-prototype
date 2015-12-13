@@ -44,6 +44,8 @@
     
     [self.collectionView setDelegate: self.delegate];
     [self.collectionView setDataSource:self.dataSource];
+    [self.collectionView setClipsToBounds:NO];
+    [self.collectionView.superview setClipsToBounds:NO];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:kNoteCellIdentifier];
     
     
