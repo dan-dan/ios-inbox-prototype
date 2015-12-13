@@ -14,6 +14,8 @@
 		650F8F671C1D0DB900E80C77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650F8F651C1D0DB900E80C77 /* LaunchScreen.storyboard */; };
 		650F8F721C1D0DB900E80C77 /* ios_inbox_prototypeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 650F8F711C1D0DB900E80C77 /* ios_inbox_prototypeTests.m */; };
 		650F8F7D1C1D0DB900E80C77 /* ios_inbox_prototypeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 650F8F7C1C1D0DB900E80C77 /* ios_inbox_prototypeUITests.m */; };
+		6552FA691C1D12C400BEA694 /* DCSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552FA681C1D12C400BEA694 /* DCSettings.m */; };
+		658B686C1C1D213100F74EEF /* DCInboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658B686B1C1D213100F74EEF /* DCInboxViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		650F8F781C1D0DB900E80C77 /* ios-inbox-prototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-inbox-prototypeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		650F8F7C1C1D0DB900E80C77 /* ios_inbox_prototypeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_inbox_prototypeUITests.m; sourceTree = "<group>"; };
 		650F8F7E1C1D0DB900E80C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6552FA681C1D12C400BEA694 /* DCSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSettings.m; sourceTree = "<group>"; };
+		6552FA6A1C1D135800BEA694 /* DCSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCSettings.h; sourceTree = "<group>"; };
+		658B686A1C1D213100F74EEF /* DCInboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCInboxViewController.h; sourceTree = "<group>"; };
+		658B686B1C1D213100F74EEF /* DCInboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCInboxViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +104,19 @@
 		650F8F501C1D0DB900E80C77 /* ios-inbox-prototype */ = {
 			isa = PBXGroup;
 			children = (
+				6552FA6A1C1D135800BEA694 /* DCSettings.h */,
+				6552FA681C1D12C400BEA694 /* DCSettings.m */,
 				650F8F541C1D0DB900E80C77 /* AppDelegate.h */,
 				650F8F551C1D0DB900E80C77 /* AppDelegate.m */,
 				650F8F601C1D0DB900E80C77 /* Main.storyboard */,
+				658B686A1C1D213100F74EEF /* DCInboxViewController.h */,
+				658B686B1C1D213100F74EEF /* DCInboxViewController.m */,
 				650F8F631C1D0DB900E80C77 /* Assets.xcassets */,
 				650F8F651C1D0DB900E80C77 /* LaunchScreen.storyboard */,
 				650F8F681C1D0DB900E80C77 /* Info.plist */,
+				6552FA641C1D110B00BEA694 /* View */,
+				6552FA631C1D10FB00BEA694 /* Model */,
+				6552FA621C1D10F000BEA694 /* Controllers */,
 				650F8F511C1D0DB900E80C77 /* Supporting Files */,
 			);
 			path = "ios-inbox-prototype";
@@ -133,6 +146,27 @@
 				650F8F7E1C1D0DB900E80C77 /* Info.plist */,
 			);
 			path = "ios-inbox-prototypeUITests";
+			sourceTree = "<group>";
+		};
+		6552FA621C1D10F000BEA694 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6552FA631C1D10FB00BEA694 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6552FA641C1D110B00BEA694 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658B686C1C1D213100F74EEF /* DCInboxViewController.m in Sources */,
 				650F8F561C1D0DB900E80C77 /* AppDelegate.m in Sources */,
 				650F8F531C1D0DB900E80C77 /* main.m in Sources */,
+				6552FA691C1D12C400BEA694 /* DCSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
