@@ -16,6 +16,8 @@
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
 }
 
+
+// Allows Preview of next target. Similar to paging.Cannot use paging because paging pages by collection view width.
 - (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset withScrollingVelocity:(CGPoint)velocity
 {
     CGFloat offsetAdjustment = MAXFLOAT;

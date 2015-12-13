@@ -29,6 +29,7 @@
     cell.transform = CGAffineTransformMakeScale(0.8, 0.8);
     
     
+    // Hacky method to check and animate.  Migrate to Cell at some point.
     CGFloat cWidth = collectionView.frame.size.width;
     for (UICollectionViewCell *cell in collectionView.visibleCells) {
         
