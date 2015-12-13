@@ -23,21 +23,17 @@
 }
 
 
+
 // Set the spacing manually so that it can be relative to device sizes
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
     
-    return collectionView.frame.size.width * 0.1333;
+    return collectionView.frame.size.width * 0.05;
     
 }
 
 - (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    [cell setBackgroundColor:[UIColor redColor]];
-    [cell setAlpha:0.5];
-   // cell.transform = CGAffineTransformMakeScale(0.5, 0.5);
-
-    
-   }
+        
+}
 
 
 @end

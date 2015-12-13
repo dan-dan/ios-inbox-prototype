@@ -23,12 +23,32 @@
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kNoteCellIdentifier    forIndexPath:indexPath];
-    [UIView animateWithDuration:0.5 animations:^{
-        [cell setAlpha:1.0];
-      //  cell.transform = CGAffineTransformIdentity;
-    }];
-
     
+    [cell setBackgroundColor:[UIColor redColor]];
+    [cell setAlpha:0.5];
+    cell.transform = CGAffineTransformMakeScale(0.8, 0.8);
+    
+    
+    CGFloat cWidth = collectionView.frame.size.width;
+    for (UICollectionViewCell *cell in collectionView.visibleCells) {
+        
+        CGRect location = [collectionView convertRect:cell.frame toView:nil];
+        CGFloat x = location.origin.x;
+        if (x > 0 && x < cWidth /2 ) {
+            [UIView animateWithDuration:0.5 animations:^{
+                [cell setAlpha:1.0];
+                cell.transform = CGAffineTransformIdentity;
+            }];
+            
+        } else {
+            [UIView animateWithDuration:0.5 animations:^{
+                [cell setAlpha:0.5];
+                cell.transform = CGAffineTransformMakeScale(0.8, 0.8);
+            }];
+        }
+        
+    }
+
     return cell;
     
 }

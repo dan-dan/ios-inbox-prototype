@@ -12,14 +12,14 @@
 
 - (void)awakeFromNib
 {
-    self.minimumLineSpacing = 50.0;
+    self.sectionInset = UIEdgeInsetsMake(0, 50.0, 0.0, 50.0);
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
 }
 
 - (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset withScrollingVelocity:(CGPoint)velocity
 {
     CGFloat offsetAdjustment = MAXFLOAT;
-    CGFloat horizontalOffset = proposedContentOffset.x + 5;
+    CGFloat horizontalOffset = proposedContentOffset.x + 52; // 52 from Trial and error
     
     CGRect targetRect = CGRectMake(proposedContentOffset.x, 0, self.collectionView.bounds.size.width, self.collectionView.bounds.size.height);
     
