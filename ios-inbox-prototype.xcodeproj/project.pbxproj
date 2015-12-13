@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		650F8F531C1D0DB900E80C77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 650F8F521C1D0DB900E80C77 /* main.m */; };
 		650F8F561C1D0DB900E80C77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 650F8F551C1D0DB900E80C77 /* AppDelegate.m */; };
-		650F8F591C1D0DB900E80C77 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650F8F581C1D0DB900E80C77 /* RootViewController.m */; };
-		650F8F5C1C1D0DB900E80C77 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650F8F5B1C1D0DB900E80C77 /* DataViewController.m */; };
-		650F8F5F1C1D0DB900E80C77 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650F8F5E1C1D0DB900E80C77 /* ModelController.m */; };
 		650F8F621C1D0DB900E80C77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650F8F601C1D0DB900E80C77 /* Main.storyboard */; };
 		650F8F641C1D0DB900E80C77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 650F8F631C1D0DB900E80C77 /* Assets.xcassets */; };
 		650F8F671C1D0DB900E80C77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650F8F651C1D0DB900E80C77 /* LaunchScreen.storyboard */; };
@@ -41,12 +38,6 @@
 		650F8F521C1D0DB900E80C77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		650F8F541C1D0DB900E80C77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		650F8F551C1D0DB900E80C77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		650F8F571C1D0DB900E80C77 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		650F8F581C1D0DB900E80C77 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		650F8F5A1C1D0DB900E80C77 /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
-		650F8F5B1C1D0DB900E80C77 /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
-		650F8F5D1C1D0DB900E80C77 /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
-		650F8F5E1C1D0DB900E80C77 /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
 		650F8F611C1D0DB900E80C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		650F8F631C1D0DB900E80C77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		650F8F661C1D0DB900E80C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -109,12 +100,6 @@
 			children = (
 				650F8F541C1D0DB900E80C77 /* AppDelegate.h */,
 				650F8F551C1D0DB900E80C77 /* AppDelegate.m */,
-				650F8F571C1D0DB900E80C77 /* RootViewController.h */,
-				650F8F581C1D0DB900E80C77 /* RootViewController.m */,
-				650F8F5A1C1D0DB900E80C77 /* DataViewController.h */,
-				650F8F5B1C1D0DB900E80C77 /* DataViewController.m */,
-				650F8F5D1C1D0DB900E80C77 /* ModelController.h */,
-				650F8F5E1C1D0DB900E80C77 /* ModelController.m */,
 				650F8F601C1D0DB900E80C77 /* Main.storyboard */,
 				650F8F631C1D0DB900E80C77 /* Assets.xcassets */,
 				650F8F651C1D0DB900E80C77 /* LaunchScreen.storyboard */,
@@ -280,11 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				650F8F5C1C1D0DB900E80C77 /* DataViewController.m in Sources */,
 				650F8F561C1D0DB900E80C77 /* AppDelegate.m in Sources */,
-				650F8F5F1C1D0DB900E80C77 /* ModelController.m in Sources */,
 				650F8F531C1D0DB900E80C77 /* main.m in Sources */,
-				650F8F591C1D0DB900E80C77 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +490,7 @@
 				650F8F831C1D0DB900E80C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		650F8F841C1D0DB900E80C77 /* Build configuration list for PBXNativeTarget "ios-inbox-prototypeTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +499,7 @@
 				650F8F861C1D0DB900E80C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		650F8F871C1D0DB900E80C77 /* Build configuration list for PBXNativeTarget "ios-inbox-prototypeUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +508,7 @@
 				650F8F891C1D0DB900E80C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
