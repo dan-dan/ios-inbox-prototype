@@ -16,6 +16,8 @@
 		650F8F7D1C1D0DB900E80C77 /* ios_inbox_prototypeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 650F8F7C1C1D0DB900E80C77 /* ios_inbox_prototypeUITests.m */; };
 		6552FA691C1D12C400BEA694 /* DCSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552FA681C1D12C400BEA694 /* DCSettings.m */; };
 		658B686C1C1D213100F74EEF /* DCInboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658B686B1C1D213100F74EEF /* DCInboxViewController.m */; };
+		658B686F1C1D261F00F74EEF /* DCInboxCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 658B686E1C1D261F00F74EEF /* DCInboxCollectionViewDelegate.m */; };
+		658B68721C1D267700F74EEF /* DCInboxCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 658B68711C1D267700F74EEF /* DCInboxCollectionViewDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		6552FA6A1C1D135800BEA694 /* DCSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCSettings.h; sourceTree = "<group>"; };
 		658B686A1C1D213100F74EEF /* DCInboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCInboxViewController.h; sourceTree = "<group>"; };
 		658B686B1C1D213100F74EEF /* DCInboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCInboxViewController.m; sourceTree = "<group>"; };
+		658B686D1C1D261F00F74EEF /* DCInboxCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCInboxCollectionViewDelegate.h; sourceTree = "<group>"; };
+		658B686E1C1D261F00F74EEF /* DCInboxCollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCInboxCollectionViewDelegate.m; sourceTree = "<group>"; };
+		658B68701C1D267700F74EEF /* DCInboxCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCInboxCollectionViewDataSource.h; sourceTree = "<group>"; };
+		658B68711C1D267700F74EEF /* DCInboxCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCInboxCollectionViewDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +115,6 @@
 				650F8F541C1D0DB900E80C77 /* AppDelegate.h */,
 				650F8F551C1D0DB900E80C77 /* AppDelegate.m */,
 				650F8F601C1D0DB900E80C77 /* Main.storyboard */,
-				658B686A1C1D213100F74EEF /* DCInboxViewController.h */,
-				658B686B1C1D213100F74EEF /* DCInboxViewController.m */,
 				650F8F631C1D0DB900E80C77 /* Assets.xcassets */,
 				650F8F651C1D0DB900E80C77 /* LaunchScreen.storyboard */,
 				650F8F681C1D0DB900E80C77 /* Info.plist */,
@@ -151,6 +155,12 @@
 		6552FA621C1D10F000BEA694 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				658B686D1C1D261F00F74EEF /* DCInboxCollectionViewDelegate.h */,
+				658B686E1C1D261F00F74EEF /* DCInboxCollectionViewDelegate.m */,
+				658B68701C1D267700F74EEF /* DCInboxCollectionViewDataSource.h */,
+				658B68711C1D267700F74EEF /* DCInboxCollectionViewDataSource.m */,
+				658B686A1C1D213100F74EEF /* DCInboxViewController.h */,
+				658B686B1C1D213100F74EEF /* DCInboxViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -301,8 +311,10 @@
 			files = (
 				658B686C1C1D213100F74EEF /* DCInboxViewController.m in Sources */,
 				650F8F561C1D0DB900E80C77 /* AppDelegate.m in Sources */,
+				658B686F1C1D261F00F74EEF /* DCInboxCollectionViewDelegate.m in Sources */,
 				650F8F531C1D0DB900E80C77 /* main.m in Sources */,
 				6552FA691C1D12C400BEA694 /* DCSettings.m in Sources */,
+				658B68721C1D267700F74EEF /* DCInboxCollectionViewDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
