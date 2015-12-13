@@ -15,13 +15,20 @@
                   layout:(UICollectionViewLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    CGFloat width = collectionView.frame.size.width; // 80% of Collection View
-    CGFloat height = collectionView.frame.size.height * 0.8; // 60% of Collection View
+    CGFloat width = collectionView.frame.size.width *0.9 * 0.8; // 80% of Collection View
+    CGFloat height = collectionView.frame.size.height * 0.5; // 60% of Collection View
     
         return CGSizeMake(width , height);
     
 }
 
+
+// Set the spacing manually so that it can be relative to device sizes
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
+    
+    return collectionView.frame.size.width * 0.1333;
+    
+}
 
 - (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
     

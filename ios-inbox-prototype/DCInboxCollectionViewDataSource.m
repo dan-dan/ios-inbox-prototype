@@ -24,8 +24,8 @@
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kNoteCellIdentifier    forIndexPath:indexPath];
     [UIView animateWithDuration:0.5 animations:^{
-   //     [cell setAlpha:1.0];
-        cell.transform = CGAffineTransformIdentity;
+        [cell setAlpha:1.0];
+      //  cell.transform = CGAffineTransformIdentity;
     }];
 
     
